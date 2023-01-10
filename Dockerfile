@@ -20,7 +20,7 @@ RUN apk add --no-cache \
     nodejs npm 
 
 COPY package.json  .
-RUN npm install 
+RUN npm install -g graceful-fs graceful-fs@latest
 
 FROM alpine:latest
 
